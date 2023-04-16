@@ -5,6 +5,7 @@
 }
 
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
 }
@@ -14,6 +15,10 @@
 @import 'blocks/buttons.scss';
 @import 'blocks/advantages.scss';
 @import 'blocks/titles.scss';
+@import 'blocks/consultation.scss';
+@import 'blocks/forms.scss';
+@import 'blocks/carousel.scss';
+@import 'blocks/catalog.scss';
 
 
 
