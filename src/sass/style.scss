@@ -1,5 +1,12 @@
-@import 'base/_variables.scss';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/tiny-slider';
+@import 'libs/animate.min';
 
+
+
+@import 'base/_variables.scss';
+@import 'base/animations.scss';
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -22,6 +29,6 @@
 @import 'blocks/reviews.scss';
 @import 'blocks/footer.scss';
 @import 'blocks/modal.scss';
-
+@import 'blocks/pageup.scss';
 
 

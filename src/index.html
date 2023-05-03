@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 <body>
     <section class="promo">
@@ -73,7 +70,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/heart.png" alt="heart" class="advantages__icon">
+                    <img src="icons/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">
                         Заботимся о здоровье
                     </div>
@@ -108,17 +105,17 @@
                 Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
             </div>
 
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш e-mail" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name"  placeholder="Ваше имя" type="text">
+                <input name="phone"  placeholder="Ваш телефон" >
+                <input name="email"  placeholder="Ваш e-mail" type="email">
 
                 <button class="button button_submit"  >заказать кОНСУЛЬТАЦИЮ</button>
             </form>
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
        <div class="container">
         <div class="carousel__inner">
             <div> <img src="img/slide_1.jpg" alt="slide"></div>
@@ -129,7 +126,7 @@
         <button type="button" class="prev"><img src="icons/left.svg"></button>
         <button type="button" class="next"><img src="icons/right.svg"></button>
        </div>
-    </section>
+    </div>
 
 
     <section class="catalog">
@@ -444,7 +441,7 @@
     <section class="reviews">
         <div class="container">
             <div class="title">отзывы клиентов</div>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/iryna.png" alt="iryna">
                     <div class="reviews__text">
                         <div class="reviews__subtitle">Ирина Иванченко </div>
@@ -463,7 +460,7 @@
             </div>
 
             <div class="container">
-                <div class="reviews__item">
+                <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                         <img src="img/ivan.png" alt="ivan">
                         <div class="reviews__text">
                             <div class="reviews__subtitle">Иван Сёмочкин</div>
@@ -478,7 +475,7 @@
                 </div>
 
                 <div class="container">
-                    <div class="reviews__item">
+                    <div class="reviews__item animate__animated animate__fadeInUp wow"data-wow-duration="2s" data-wow-delay="1s" >
                             <img src="img/yulia.png" alt="yulia">
                             <div class="reviews__text">
                                 <div class="reviews__subtitle">Юлия Дашкина</div>
@@ -514,7 +511,7 @@
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон" >
                 <input name="email" required placeholder="Ваш e-mail" type="email">
 
                 <button class="button button_submit"  >заказать кОНСУЛЬТАЦИЮ</button>
@@ -528,7 +525,7 @@
         <div class="modal__descr">Пульсометр Polar FT1</div>
         <form class="feed-form feed-form_mt25" action="#">
             <input name="name" required placeholder="Ваше имя" type="text">
-            <input name="phone" required placeholder="Ваш телефон" type="number">
+            <input name="phone" required placeholder="Ваш телефон" >
             <input name="email" required placeholder="Ваш e-mail" type="email">
 
             <button class="button button_submit">Купить</button>
@@ -539,10 +536,17 @@
         <div class="modal__close">&times;</div>
         <div class="modal__subtitle">Спасибо за вашу заявку!</div>
         <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
-
+        
+        <a href="#" class="pageup" >
+            <img src="icons/circle-chevron-up-solid.svg" alt="up" >
+        </a>
+        
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/query.maskedinput.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
